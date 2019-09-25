@@ -139,7 +139,7 @@ void Init( )用来给Headquarter对象赋值，main函数里创建Headquarter对
 
 ##### class Warrior
 
-class Warrior的成员变量除了表示武士种类的代号int kindNo，还有一个指向司令部的指针Headquarter *pHeadquarter，可以通过这个指针访问司令部的成员，比如通过pHeadquarter调用司令部的Getcolor( )函数和访问int warriorNum[kindNo]等成员变量。既然已经声明为友元，为何不直接访问变量，而需要通过指针❓
+class Warrior的成员变量除了表示武士种类的代号int kindNo，还有一个指向司令部的指针Headquarter *pHeadquarter，可以通过这个指针访问司令部的成员，比如通过pHeadquarter调用司令部的Getcolor( )函数和访问int warriorNum[kindNo]等成员变量。
 
 剩下的int no是司令部生产武士时的序号，因为后面的题中Warrior的派生类需要用它给成员变量赋值，因此提前考虑在此算作成员变量一员。
 
